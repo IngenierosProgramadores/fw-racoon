@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Racoon-FW</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/racoon.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="brand-title">
+          <a href="/">FG-CARPINTERIA</a>
+        </div>
+        <div class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="navbar-links">
+          <ul class="navbar-item">
+            <li>
+              <a href="#productos-y-servicios">PRODUCTOS</a>
+            </li>
+            <li>
+              <a href="#productos-y-servicios">SERVICIOS</a>
+            </li>
+            <li>
+              <a href="#productos-y-servicios">GALERIA</a>
+            </li>
+            <li>
+              <a href="#productos-y-servicios">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="contenedor">
+      <div class="pt-5">
+        <h1>Encabezado H1</h1>
+        <h1>Encabezado H1</h1>
+        <h2>Encabezado H2</h2>
+        <h3>Encabezado H3</h3>
+        <h4>Encabezado H4</h4>
+        <h5>Encabezado H5</h5>
+        <h6>Encabezado H6</h6>
+      </div>
+
+      <h1 class="display-1">Display 1</h1>
+      <h2 class="display-2">Display 2</h2>
+      <h3 class="display-3">Display 3</h3>
+
+      <div class="contenedor">
+        <main class="grid col-4 col-md-2 col-sm-1">
+          <div class="card">Card 1</div>
+          <div class="card">Card 2</div>
+          <div class="card">Card 3</div>
+          <div class="card">Card 4</div>
+          <div class="card">Card 5</div>
+          <div class="card">Card 6</div>
+        </main>
+      </div>
+
+      <div class="contenedor">
+        <div class="grid col-3">
+          <div class="span-2 span-md-3">
+            <div class="card">
+              <h1>Lorem ipsum dolor sit amet.</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium dolor autem vel laborum mollitia repellendus facere
+                voluptatum, accusantium quibusdam unde, nobis sapiente
+                recusandae officiis nisi amet iusto quos consectetur laudantium.
+              </p>
+            </div>
+            <div class="card mt-2">
+              <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium dolor autem vel laborum mollitia repellendus facere
+                voluptatum, accusantium quibusdam unde, nobis sapiente
+                recusandae officiis nisi amet iusto quos consectetur laudantium.
+              </p>
+            </div>
+          </div>
+          <div class="card span-md-2 span-sm-3">
+            <h3>Registrate</h3>
+            <form action="">
+              <input
+                class="input"
+                type="text"
+                placeholder="Correo electronico"
+              />
+              <input class="input" type="password" placeholder="Contraseña" />
+              <button class="button">Iniciar sesón</button>
+              <button class="button green">Registrarse</button>
+              <button class="button red">Cancelar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor">
+        <div class="card">
+          <h1>Elementos disponibles</h1>
+          <h2># Margin y Padding</h2>
+          <p>Todos los elementos margin m-0 p-0 y padding van del 0 al 5</p>
+          <div class="grid col-2">
+            <ul>
+              <li>p-0</li>
+              <li>pt</li>
+              <li>pr</li>
+              <li>pb</li>
+              <li>pl</li>
+            </ul>
+            <ul>
+              <li>m-0</li>
+              <li>mt</li>
+              <li>mr</li>
+              <li>mb</li>
+              <li>ml</li>
+            </ul>
+          </div>
+          <h2># Grid</h2>
+          <p>
+            Tenemos 12 columnas en el grid se declara primero la clase grid y
+            despues el tamaño de columnas que ocupamos. Las variaciones son
+            col-sm-1 col-md-1 y el normal es el col-1
+          </p>
+          <div class="grid col-1">
+            <ul>
+              <li>col-1</li>
+              <li>col-md-1</li>
+              <li>col-sm-1</li>
+            </ul>
+          </div>
+          <h2># Buttons</h2>
+          <p>
+            Para los botones solo es declarar la clase button y las 2 variantes
+            green y red, ya que por defecto tendra el color de racoon (una
+            variante morada)
+          </p>
+          <div class="grid col-1">
+            <ul>
+              <li>button</li>
+              <li>button green</li>
+              <li>button red</li>
+            </ul>
+          </div>
+          <h2># Input text y password</h2>
+          <p>
+            El input text y password tienen un diseño minimalista, solo requiere
+            la clase input
+          </p>
+          <div class="grid col-1">
+            <ul>
+              <li>input</li>
+            </ul>
+          </div>
+          <h2># Tamaño textos</h2>
+          <p>
+            Las variantes se encuentran entre los elementos H y las clases
+            variantes display
+          </p>
+          <div class="grid col-2">
+            <ul>
+              <li>h1</li>
+              <li>h2</li>
+              <li>h3</li>
+              <li>h4</li>
+              <li>h5</li>
+              <li>h6</li>
+            </ul>
+            <ul>
+              <li>display-1</li>
+              <li>display-2</li>
+              <li>display-3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/nabar.js"></script>
+  </body>
+</html>
