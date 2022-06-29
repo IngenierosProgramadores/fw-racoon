@@ -549,14 +549,35 @@ form .input:focus {
 .btn.btn-border-pop.red::before {
   border: var(--border-size) solid var(--color-red);
 }
-.btn.btn-slide,
-.btn.btn-slide.green,
+.btn.btn-slide {
+  z-index: 1;
+  background-color: #fff;
+  color: var(--color-racoon);
+  border: 1px solid var(--color-racoon);
+}
+.btn.btn-slide.green {
+  z-index: 1;
+  background-color: #fff;
+  color: var(--color-green);
+  border: 1px solid var(--color-green);
+}
 .btn.btn-slide.red {
   z-index: 1;
-  background-color: #c2c2c2;
-  /* border: 1px solid var(--color-racoon); */
+  background-color: #fff;
+  color: var(--color-red);
+  border: 1px solid var(--color-red);
 }
 
+.btn.btn-slide:hover::before,
+.btn.btn-slide:focus::before {
+  transform: scaleX(1);
+}
+.btn.btn-slide.green::before {
+  background-color: var(--color-green);
+}
+.btn.btn-slide.red::before {
+  background-color: var(--color-red);
+}
 .btn.btn-slide::before {
   border-radius: 5px;
   content: "";
@@ -572,15 +593,15 @@ form .input:focus {
   transform: scaleX(0);
   transform-origin: left;
 }
-.btn.btn-slide:hover::before,
-.btn.btn-slide:focus::before {
-  transform: scaleX(1);
+
+.btn.btn-slide {
+  transition: color 300ms ease-in-out;
+  z-index: 1;
 }
-.btn.btn-slide.green::before {
-  background-color: var(--color-green);
-}
-.btn.btn-slide.red::before {
-  background-color: var(--color-red);
+
+.btn.btn-slide:hover,
+.btn.btn-slide:focus {
+  color: white;
 }
 
 /* Helpers */
