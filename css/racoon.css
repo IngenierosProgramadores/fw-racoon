@@ -11,6 +11,8 @@
   --fuente: "Cairo", sans-serif;
   --fondo: #f2f2f2;
   --color-racoon: #312783;
+  --color-green: #00a04a;
+  --color-red: #d61c4e;
   --ancho-contenedor: 1200px;
 }
 
@@ -480,16 +482,16 @@ form .input:focus {
   background: #5114c2;
 }
 .btn.green {
-  background: rgb(0, 160, 74);
-}
-.btn.green:hover {
   background: #00833d;
 }
+.btn.green:hover {
+  background: var(--color-green);
+}
 .btn.red {
-  background: #d61c4e;
+  background: #990000;
 }
 .btn.red:hover {
-  background: #990000;
+  background: var(--color-red);
 }
 .btn.btn-outline {
   background: none;
@@ -502,11 +504,11 @@ form .input:focus {
 }
 .btn.btn-outline.green {
   background: none;
-  border: 2px solid rgb(0, 160, 74);
-  color: rgb(0, 160, 74);
+  border: 2px solid #00a04a;
+  color: #00a04a;
 }
 .btn.btn-outline.green:hover {
-  background: rgb(0, 160, 74);
+  background: #00a04a;
   color: white;
 }
 .btn.btn-outline.red {
@@ -517,6 +519,68 @@ form .input:focus {
 .btn.btn-outline.red:hover {
   background: #d61c4e;
   color: white;
+}
+.btn {
+  position: relative;
+  --border-size: 2px;
+}
+.btn.btn-border-pop::before {
+  border-radius: 5px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: var(--border-size) solid var(--color-racoon);
+  transition: top, left, right, bottom, 100ms ease-in-out;
+}
+.btn.btn-border-pop:hover::before,
+.btn.btn-border-pop:focus::before {
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
+}
+
+.btn.btn-border-pop.green::before {
+  border: var(--border-size) solid #00a04a;
+}
+.btn.btn-border-pop.red::before {
+  border: var(--border-size) solid var(--color-red);
+}
+.btn.btn-slide,
+.btn.btn-slide.green,
+.btn.btn-slide.red {
+  z-index: 1;
+  background-color: #c2c2c2;
+  /* border: 1px solid var(--color-racoon); */
+}
+
+.btn.btn-slide::before {
+  border-radius: 5px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-racoon);
+  z-index: -1;
+
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.btn.btn-slide:hover::before,
+.btn.btn-slide:focus::before {
+  transform: scaleX(1);
+}
+.btn.btn-slide.green::before {
+  background-color: var(--color-green);
+}
+.btn.btn-slide.red::before {
+  background-color: var(--color-red);
 }
 
 /* Helpers */
@@ -727,6 +791,13 @@ form .input:focus {
 }
 .text-right {
   text-align: right;
+}
+.text-clear {
+  text-decoration: none;
+  color: #000;
+}
+.text-clear:hover {
+  color: cornflowerblue;
 }
 .fw-bold {
   font-weight: bold;

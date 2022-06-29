@@ -50,7 +50,31 @@
           usar y se muestra la clase con la que se pueden llamar, a manera de
           ejemplo.
         </p>
-        <div>
+        <div class="grid col-4 col-md-2 col-sm-1">
+          <div class="card">
+            <a href="#btn-regular" class="text-clear"
+              ><h3># Button Regular</h3></a
+            >
+            <button class="btn">Button</button>
+          </div>
+          <div class="card">
+            <a href="#btn-outline" class="text-clear"
+              ><h3># Button Outline</h3></a
+            >
+            <button class="btn btn-outline">Button</button>
+          </div>
+          <div class="card">
+            <a href="#btn-border-pop" class="text-clear"
+              ><h3># Button Border Pop</h3></a
+            >
+            <button class="btn btn-border-pop">Button</button>
+          </div>
+          <div class="card">
+            <a href="#btn-slide" class="text-clear"><h3># Button Slide</h3></a>
+            <button class="btn btn-slide">Button</button>
+          </div>
+        </div>
+        <div id="btn-regular">
           <h2># Regular Buttons</h2>
           <p class="fw-bold">Ejemplo:</p>
           <div class="show-code">
@@ -66,7 +90,7 @@
             <tbody>
               <tr>
                 <td>
-                  <button class="btn">Button Primary</button>
+                  <button class="btn">Button</button>
                 </td>
                 <td>btn</td>
               </tr>
@@ -85,7 +109,7 @@
             </tbody>
           </table>
         </div>
-        <div class="pt-2">
+        <div id="btn-outline" class="pt-2">
           <h2># Buttons Outline</h2>
           <p class="fw-bold">Ejemplo:</p>
           <div class="show-code">
@@ -103,9 +127,7 @@
             <tbody>
               <tr>
                 <td>
-                  <button class="btn btn-outline">
-                    Button Outline Primary
-                  </button>
+                  <button class="btn btn-outline">Button Outline</button>
                 </td>
                 <td>btn btn-outline</td>
               </tr>
@@ -124,6 +146,84 @@
                   </button>
                 </td>
                 <td>btn btn-outline red</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="btn-border-pop" class="pt-2">
+          <h2># Buttons Border Pop</h2>
+          <p class="fw-bold">Ejemplo:</p>
+          <div class="show-code">
+            <span>
+              &lt;button class="btn btn-border-pop"&gt; Button &lt;/button&gt;
+            </span>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Elemento</th>
+                <th>Classlist</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <button class="btn btn-border-pop">Button Pop</button>
+                </td>
+                <td>btn btn-border-pop</td>
+              </tr>
+              <tr>
+                <td>
+                  <button class="btn btn-border-pop green">
+                    Button Pop Green
+                  </button>
+                </td>
+                <td>btn btn-border-pop green</td>
+              </tr>
+              <tr>
+                <td>
+                  <button class="btn btn-border-pop red">Button Pop Red</button>
+                </td>
+                <td>btn btn-border-pop red</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="btn-slide" class="pt-2">
+          <h2># Buttons Slide</h2>
+          <p class="fw-bold">Ejemplo:</p>
+          <div class="show-code">
+            <span>
+              &lt;button class="btn btn-slide"&gt; Button &lt;/button&gt;
+            </span>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Elemento</th>
+                <th>Classlist</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <button class="btn btn-slide">Button Slide</button>
+                </td>
+                <td>btn btn-slide</td>
+              </tr>
+              <tr>
+                <td>
+                  <button class="btn btn-slide green">
+                    Button Slide Green
+                  </button>
+                </td>
+                <td>btn btn-slide green</td>
+              </tr>
+              <tr>
+                <td>
+                  <button class="btn btn-slide red">Button Slide Red</button>
+                </td>
+                <td>btn btn-slide red</td>
               </tr>
             </tbody>
           </table>
