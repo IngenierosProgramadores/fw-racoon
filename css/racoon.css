@@ -324,6 +324,13 @@ img {
 .brand-title a {
   text-decoration: none;
   color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.brand-title a img {
+  height: 50px;
+  width: auto;
 }
 
 .navbar-links ul {
