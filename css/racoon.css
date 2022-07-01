@@ -288,6 +288,7 @@ img {
 /* Componentes */
 .card {
   padding: 40px;
+  margin: 1rem 0;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0px 0px 30px rgba(221, 221, 221, 0.3);
@@ -544,10 +545,10 @@ form .input:focus {
 }
 
 .btn.btn-border-pop.green::before {
-  border: var(--border-size) solid #00a04a;
+  border: var(--border-size) solid #00833d;
 }
 .btn.btn-border-pop.red::before {
-  border: var(--border-size) solid var(--color-red);
+  border: var(--border-size) solid #990000;
 }
 .btn.btn-slide {
   z-index: 1;
